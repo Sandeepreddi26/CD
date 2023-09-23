@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: 800px;
+            background-attachment: fixed;
+        
+            
+        }
+        .row{
+            display: flex;
+        }
+        .col1{
+            flex-basis: 50%;
+        }
+        .col2{
+            flex-basis: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home</h1>
+    <div class="row">
+        
+        <div class="col1">
+            <img src="{{ url_for('static', filename='images\cd.png')}}" class="img-fluid">
+        </div>
+        <div class="col2">
+            <h1>Crop: Plant Disease Identification Using Mobile App.</h1>
+            <br>
+            <p>
+                Hey farmers! 
+                Plant diseases can be detected using Deep Learning!
+                We are here to classify the diseases of plants and guide you through videos and give instant remedies to overcome the loss of plants and fields.
+                Since the past days and in the present too, farmers usually detect the crop diseases with their naked eye which makes them take tough decisions on which fertilisers to use. It requires detailed knowledge the types of diseases and lot of experience needed to make sure the actual disease detection. Some of the diseases look almost similar to farmers often leaves them confused.
+                But now on you can leave us a image and detect all your plant diseases and their remedies.
+            </p>
+            <br>
+            <h6>click on the login button to Login</h6>
+            <button type="submit" name="submit" value="detect" href="/login">Login</button>
+        </div>
+    </div>
+</body>
+</html>

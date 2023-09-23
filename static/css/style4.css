@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+}
+h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+body{
+    background-image: url("https://media.istockphoto.com/id/1333211562/vector/cyber-network-protection-future-technology-background.jpg?s=612x612&w=0&k=20&c=RvnV117vpeebZXTn8t3KHCAC0ONlNFI8DSlc4SHiDVA=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: azure;
+}

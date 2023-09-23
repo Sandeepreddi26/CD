@@ -1,0 +1,12 @@
+{% extends "Base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+    <h3>Drop your image to Detect</h3>
+    <img src="https://cdn.pixabay.com/photo/2017/11/10/05/24/upload-2935442__340.png" class="img-fluid" width="250" height="250"><br><br>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <input type="file"  name="some_img" class="choose"><br><br>
+        <button type="submit">Detect</button>
+    </form>
+{% endblock %}

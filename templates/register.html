@@ -1,0 +1,35 @@
+{% extends "Base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+    <h2>{{msg}}</h2>
+  <div class="row">
+    <div class="col1">
+      <img src="https://st.depositphotos.com/1008768/3377/i/950/depositphotos_33777219-stock-photo-register-here-sign.jpg" class="img-fluid" width="450" height="450">
+    </div>
+    <div class="col2">
+      <form action="" method="post">
+        <h1>Register</h1><br>    
+        <div class="form-outline">
+        <label class="form-label">Full Name</label><br>
+        <input type="text" name="fname" id="form1Example" required/>
+        </div><br>
+        <div class="form-outline">
+        <label class="form-label">Email</label><br>
+        <input type="email" name="email" id="form1Example" required/>
+        </div><br>
+        
+        <div class="form-outline">
+        <label class="form-label">Password</label><br>
+        <input type="password" name="password1" id="form1Example" required/>
+        </div><br>
+        <div class="form-outline">
+        <label class="form-label">Confirm Password</label><br>
+        <input type="password" name="password2" id="form1Example" required/>
+        </div><br>
+        <button type="submit" name="buttons">Register</button><br><br>
+      </form>
+    </div>
+  </div>
+  {% endblock %}

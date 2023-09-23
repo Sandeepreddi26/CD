@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+}
+body{
+    background-color: bisque;
+}
+.row{
+    display: flex;
+}
+.col1{
+    padding-left: 80px;
+    flex-basis: 50%;
+}
+.col2{
+    flex-basis: 50%;
+    padding-right: 100px;
+}
+img{
+    padding-left: 50px;
+    display: flexbox;
+    padding-top: 100px;
+    
+}
